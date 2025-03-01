@@ -3,6 +3,7 @@ from simple_game_main import simple_game_main as simple_game #nicole
 from highscore_printer import high_score_printer as score_printer #Sawyer
 #from [name of file] import [function name] as [new function name]
 
+#Main function handles the asking of what the players want to do, while also handling errors and calling specific files and functions base off answers
 def main(): #Cecily did this
     run=True
     while run==True:
@@ -10,7 +11,7 @@ def main(): #Cecily did this
             choose= int(input("""What do you want to do?
 1) See a scoreboard
 2) Play a game
-3) Leave\n"""))
+3) Leave\n""")) 
             if choose==1:#dispay scores
                 stay=True
                 while stay==True:

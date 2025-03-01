@@ -1,8 +1,8 @@
 #This is Nicole's simple game functions
 import random
 
-def save_user(userName):
-    if len(userName) == 3:
+def save_user(userName): #Functun saves username so it can be returned and put on file
+    if len(userName) == 3: #Only saves when the username is 3 characters long
         return userName
     else:
         userName = save_user(input("Invalid username, what is your username? (Please make it 3 characters) ").upper())
